@@ -1,0 +1,126 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font: 400 15px/1.8 "Lato", sans-serif;
+    color: #777;
+}
+
+.bgimg-1,
+.bgimg-2,
+.bgimg-3,
+.bgimg-4 {
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bgimg-1 {
+    background-color: rgb(227, 213, 213);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.bgimg-2 {
+    /* background-color: rgb(231, 230, 209); */
+    background-image: url("assets/arqui.jpg");
+    min-height: 100vh;
+    padding-top: 30px;
+}
+
+.bgimg-3 {
+    background-color: rgb(213, 227, 225);
+    min-height: 100vh;
+    padding-top: 30px;
+}
+
+.bgimg-4 {
+    background-image: url("assets/muebleartemisa.jpg");
+    min-height: 100vh;
+    padding-top: 30px;
+}
+
+.caption {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #000;
+}
+
+.titulo1 {
+    text-align: left;
+    padding: 15px 35px;
+    color: rgb(240, 240, 240);
+    background-color: rgba(100, 100, 100, 0.3);
+}
+
+.titulo2 {
+    text-align: right;
+    padding: 15px 35px;
+    color: rgb(240, 240, 240);
+    background-color: rgba(100, 100, 100, 0.3);
+}
+
+.caption .border {
+    flex: 20%;
+    background-color: rgba(100, 100, 100, 0.5);
+    color: #fff;
+    padding: 18px;
+    text-align: center;
+    font-size: 2em;
+    letter-spacing: 10px;
+}
+
+.separador {
+    padding: 30px 80x;
+    background-color: rgb(100, 100, 100);
+    color: rgb(240, 240, 240);
+    text-align: center;
+    min-height: 1px;
+}
+
+.footer {
+    padding: 20px 20px;
+    background-color: rgb(100, 100, 100);
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    color: rgb(240, 240, 240);
+    text-align: center;
+    min-height: 350px;
+}
+
+.footer .icon {
+    flex: 20%;
+}
+
+h3 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font: 20px "Lato", sans-serif;
+    color: #111;
+}
+
+
+/* Turn off parallax scrolling for tablets and phones */
+
+@media only screen and (max-device-width: 1024px) {
+    /* .bgimg-1,
+    .bgimg-2,
+    .bgimg-3 {
+        background-attachment: scroll;
+    } */
+    .footer {
+        padding: 10px 10px;
+        min-height: 100px;
+    }
+    .footer .icon {
+        flex: 50%;
+    }
+}
